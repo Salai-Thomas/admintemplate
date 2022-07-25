@@ -1,0 +1,132 @@
+body{
+    background:#757575;
+}
+/* Start left-side bar */
+.sidebars{
+    height:100vh;
+    background:rgba(0,0,0,7);
+
+    box-shadow: 5px 0 25px #999;/*down left right*/
+}
+
+a{
+    text-decoration: none;
+}
+
+.borderbottoms{
+    border-bottom:1px groove #eee;/*groove is little thin than solid*/
+}
+
+.dropfirsts{
+    padding: 10px 0;
+    border-top:1px groove #eee;
+    border-bottom:1px groove #eee;
+}
+.drops{
+    padding: 10px 0;
+    border-bottom:1px groove #eee;
+}
+
+.droplasts{
+    padding: 10px 0; 
+}
+
+.sideitems .navbar-item:hover{
+    background:#a3a199;
+}
+/* End left-side bar */
+
+@media(max-width:760px){
+    .sidebars{
+        /* height:100%;element ရှိသလောက်*/
+        height:auto;
+        position:static;/*static ကsidebarကိုအပေါ်layerပို့ အောက်layerကိုမကွယ် အောက်layerက အပေါ်element ဆုံးတဲ့နေရာကစ*/
+    }
+
+    .topbars{
+        height:auto;
+        position:static;
+    }
+}
+
+/*Start Top-Side Bar*/
+.searchs{
+    background:transparent;
+    color:#fff;
+    border:0;
+    border-bottom:2px solid #999;
+    border-radius: 0;/*bootstrap က auto ပါတာကိုဖြုတ်*/ 
+
+}
+.searchs:focus{
+    background:transparent;
+    color:#fff;
+    box-shadow:none;/*bootstrap က auto ပါတာကိုဖြုတ်*/ 
+    border-bottom: 2px solid tomato;
+}
+.sear-btn{
+    border-radius: 50%;
+}
+
+.sear-btn:focus{
+    box-shadow:none;/*bootstrap က auto ပါတာကိုဖြုတ်*/
+}
+
+/*End Top-Side Bar*/
+
+
+/*START CARD SECTION*/
+.cardcommns{
+    border: none;
+    box-shadow: 3px 3px 3px #999;
+    border-top:1px groove #777;
+    border-left:1px groove #777;
+
+    transition:all 0.4s;
+}
+
+.cardcommns:hover{
+    border: none;
+    box-shadow: 3px 3px 3px #999;
+    border-bottom:1px groove #777;
+    border-right:1px groove #777;
+
+    transform: translateY(-1px);
+}
+/*END CARD SECTION*/
+
+
+/*START CONVERSION RATES*/
+.conv-box{
+    background:#111;
+    border:0;
+    box-shadow:3px 3px 3px #999;
+}
+.icons,.percents{
+    position:absolute;
+    right:2px;
+}
+
+/*END CONVERSION RATES*/
+
+
+/*START TODOLIST*/
+.checkbox:checked + .check-input{
+    text-decoration:line-through;
+    font-weight: 400 !important;
+}
+/*END TODOLIST*/
+
+/*START MESSAGES*/
+.mess-boxs{
+    height:250px;
+    overflow: auto;
+}
+ #plus-minus{
+     transition:all 0.4s ease;
+ }
+.chat-lists:hover{
+    background:#c2c2c2;
+    cursor: pointer ;
+}
+/*END MESSAGES*/
